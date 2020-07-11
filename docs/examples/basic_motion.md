@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Basic Motion
-parent: Getting Started
-nav_order: 4
+parent: Examples
+nav_order: 1
 ---
 
 # Basic Motion

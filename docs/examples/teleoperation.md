@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Teleoperation
-parent: Getting Started
-nav_order: 5
+parent: Examples
+nav_order: 2
 ---
 
 # Teleoperation

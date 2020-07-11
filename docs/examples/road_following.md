@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Road Following
-parent: Getting Started
-nav_order: 7
+parent: Examples
+nav_order: 4
 ---
 
 # Road Following
