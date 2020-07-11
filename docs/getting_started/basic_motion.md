@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Hardware Setup
+title: Basic Motion
 parent: Getting Started
 nav_order: 4
 ---
 
-# Hardware Setup
+# Basic Motion

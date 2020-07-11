@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Hardware Setup
+title: Ordering Parts
 parent: Getting Started
 nav_order: 4
 ---
 
-# Hardware Setup
+# Ordering Parts
