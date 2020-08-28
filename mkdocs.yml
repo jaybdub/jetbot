@@ -1,0 +1,39 @@
+site_name: JetBot
+theme:
+  name: "material"
+  palette:
+    primary: green
+    secondary: light green
+
+plugins:
+  - search
+#   - mkdocstrings
+
+markdown_extensions:
+  - pymdownx.superfences
+
+nav:
+
+  - Home:  README.md
+  - Hardware Setup:
+      - Nvidia:
+          hardware/jetbot/nvidia/README.md
+      - Waveshare:
+          hardware/jetbot/waveshare/README.md
+      - Sparkfun:
+          hardware/jetbot/sparkfun/README.md
+  - Software Setup:
+      - Docker:
+          docker/README.md
+  - Examples:
+      - Basic Motion: 
+          notebooks/basic_motion/README.md
+      - Teleoperation:
+          notebooks/teleoperation/README.md
+      - Collision Avoidance:
+          notebooks/collision_avoidance/README.md
+      - Road Following:
+          notebooks/road_following/README.md
+      - Object Following:
+          notebooks/object_following/README.md
+      
