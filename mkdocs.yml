@@ -14,26 +14,9 @@ markdown_extensions:
 
 nav:
 
-  - Home:  README.md
-  - Hardware Setup:
-      - Nvidia:
-          hardware/jetbot/nvidia/README.md
-      - Waveshare:
-          hardware/jetbot/waveshare/README.md
-      - Sparkfun:
-          hardware/jetbot/sparkfun/README.md
-  - Software Setup:
-      - Docker:
-          docker/README.md
-  - Examples:
-      - Basic Motion: 
-          notebooks/basic_motion/README.md
-      - Teleoperation:
-          notebooks/teleoperation/README.md
-      - Collision Avoidance:
-          notebooks/collision_avoidance/README.md
-      - Road Following:
-          notebooks/road_following/README.md
-      - Object Following:
-          notebooks/object_following/README.md
+  - Home:  https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Home
+  - Bill of Materials: https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Bill-of-Materials
+  - Hardware Setup: https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Hardware-Setup
+  - Software Setup: https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Software-Setup
+  - Examples: https://github.com/NVIDIA-AI-IOT/jetbot/wiki/examples
       
