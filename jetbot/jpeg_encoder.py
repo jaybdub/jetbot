@@ -22,7 +22,7 @@ class JpegEncoder(object):
             fps=fps
         )
         
-        GST_STRING = 'appsrc name=src emit-signals=True is-live=True caps=video/x-raw,format=BGR,width={width},height={height},framerate={fps}/1 !'\
+        GST_STRING = 'appsrc name=src emit-signals=True is-live=True caps=video/x-raw,format=RGB,width={width},height={height},framerate={fps}/1 !'\
             ' nvjpegenc '\
             '! image/jpeg,width={width},height={height},framerate={fps}/1 !'\
             ' appsink name=sink'.format(
@@ -68,9 +68,12 @@ class JpegEncoder(object):
         self.stop()
         
     def encode(self, image):
+        # mem leak?
         buffer = Gst.Buffer.new_wrapped(image.tobytes())
         self.appsrc.emit("push-buffer", buffer)
         sample = self.appsink.emit('pull-sample')  # blocks until sample avaialable
         buf = sample.get_buffer()
         (result, mapinfo) = buf.map(Gst.MapFlags.READ)
-        return buf.extract_dup(0, buf.get_size())
+        data = buf.extract_dup(0, buf.get_size())
+        buf.unmap(mapinfo)
+        return data
