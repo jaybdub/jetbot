@@ -12,4 +12,6 @@ sudo docker run -it -d \
     -v $WORKSPACE:/workspace \
     --workdir /workspace \
     --name=jetbot_jupyter \
+    --memory=500m \
+    --memory-swap=3G \
     jetbot-jupyter:$JETBOT_VERSION

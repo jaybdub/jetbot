@@ -27,7 +27,7 @@ class GstCamera(object):
             '! video/x-raw, width=(int){width}, height=(int){height}, format=(string)BGRx !'\
             ' videoconvert '\
             '! video/x-raw, format=(string)BGR !'\
-            ' appsink name=sink'.format(
+            ' appsink name=sink drop=1'.format(
             sensor_mode=sensor_mode,
             width=width, 
             height=height, 
