@@ -11,7 +11,7 @@
       
       
       <link rel="shortcut icon" href="images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.11">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
@@ -19,14 +19,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.860688db.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.fe0cca5b.min.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/palette.943997b5.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.a46bcfb3.min.css">
       
-      
-        
-        
-        <meta name="theme-color" content="#4cae4f">
       
     
     
@@ -41,10 +37,12 @@
     
       <link rel="stylesheet" href="css/version-select.css">
     
+      <link rel="stylesheet" href="css/colors.css">
+    
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-135919510-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-135919510-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -55,7 +53,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="nvgreen" data-md-color-primary="" data-md-color-accent="">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -212,7 +210,9 @@
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Getting Started
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
       </label>
     
     <a href="getting_started.html" title="Getting Started" class="md-nav__link md-nav__link--active">
@@ -227,28 +227,98 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-setup-your-jetbot" class="md-nav__link">
-    Step 1 - Setup your JetBot
+  <a href="#step-1-pick-your-vehicle" class="md-nav__link">
+    Step 1 - Pick your vehicle!
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-follow-the-examples" class="md-nav__link">
-    Step 2 - Follow the Examples
+  <a href="#step-2-setup-your-jetbot" class="md-nav__link">
+    Step 2 - Setup your JetBot
   </a>
+  
+    <nav class="md-nav" aria-label="Step 2 - Setup your JetBot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-diy-jetbot-kit" class="md-nav__link">
+    Option 1 - DIY JetBot Kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-third-party-jetbot-kit" class="md-nav__link">
+    Option 2 - Third Party JetBot Kit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-create-something-new" class="md-nav__link">
-    Step 3 - Create Something New
+  <a href="#step-3-follow-the-examples" class="md-nav__link">
+    Step 3 - Follow the examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3 - Follow the examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-basic-motion" class="md-nav__link">
+    Example 1 - Basic Motion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-teleoperation" class="md-nav__link">
+    Example 2 - Teleoperation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-collision-avoidance" class="md-nav__link">
+    Example 3 - Collision Avoidance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-road-following" class="md-nav__link">
+    Example 4 - Road Following
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-object-following" class="md-nav__link">
+    Example 5 - Object Following
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#and-more" class="md-nav__link">
+    And more!
   </a>
   
 </li>
@@ -265,90 +335,49 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Platforms
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Platforms" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        Platforms
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Nvidia JetBot
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Nvidia JetBot" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        <span class="md-nav__icon md-icon"></span>
-        Nvidia JetBot
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="platforms/nvidia_jetbot/index.html" title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="platforms/nvidia_jetbot/bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
+    <a href="bill_of_materials.html" title="Bill of Materials" class="md-nav__link">
       Bill of Materials
     </a>
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
 
 
   <li class="md-nav__item">
-    <a href="platforms/nvidia_jetbot/3d_printing.html" title="3D Printing" class="md-nav__link">
-      3D Printing
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="platforms/nvidia_jetbot/hardware_setup.html" title="Hardware Setup" class="md-nav__link">
+    <a href="hardware_setup.html" title="Hardware Setup" class="md-nav__link">
       Hardware Setup
     </a>
   </li>
 
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Software Setup
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Software Setup" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Software Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -356,25 +385,20 @@
 
 
   <li class="md-nav__item">
-    <a href="platforms/nvidia_jetbot/software_setup.html" title="Software Setup" class="md-nav__link">
-      Software Setup
+    <a href="software_setup/docker.html" title="Using Docker Container" class="md-nav__link">
+      Using Docker Container
     </a>
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
           
           
           
 
 
   <li class="md-nav__item">
-    <a href="platforms/third_party_kits.html" title="Third Party Kits" class="md-nav__link">
-      Third Party Kits
+    <a href="software_setup/sd_card.html" title="Using SD Card Image" class="md-nav__link">
+      Using SD Card Image
     </a>
   </li>
 
@@ -391,16 +415,20 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
-    <label class="md-nav__link" for="nav-4">
-      Notebooks
-      <span class="md-nav__icon md-icon"></span>
+    <label class="md-nav__link" for="nav-6">
+      Examples
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
-    <nav class="md-nav" aria-label="Notebooks" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon"></span>
-        Notebooks
+    <nav class="md-nav" aria-label="Examples" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -411,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="notebooks/basic_motion/index.html" title="Basic Motion" class="md-nav__link">
+    <a href="examples/basic_motion.html" title="Basic Motion" class="md-nav__link">
       Basic Motion
     </a>
   </li>
@@ -423,7 +451,7 @@
 
 
   <li class="md-nav__item">
-    <a href="notebooks/teleoperation/index.html" title="Teleoperation" class="md-nav__link">
+    <a href="examples/teleoperation.html" title="Teleoperation" class="md-nav__link">
       Teleoperation
     </a>
   </li>
@@ -435,7 +463,7 @@
 
 
   <li class="md-nav__item">
-    <a href="notebooks/collision_avoidance/index.html" title="Collision Avoidance" class="md-nav__link">
+    <a href="examples/collision_avoidance.html" title="Collision Avoidance" class="md-nav__link">
       Collision Avoidance
     </a>
   </li>
@@ -447,7 +475,7 @@
 
 
   <li class="md-nav__item">
-    <a href="notebooks/road_following/index.html" title="Road Following" class="md-nav__link">
+    <a href="examples/road_following.html" title="Road Following" class="md-nav__link">
       Road Following
     </a>
   </li>
@@ -459,7 +487,7 @@
 
 
   <li class="md-nav__item">
-    <a href="notebooks/object_following/index.html" title="Object Following" class="md-nav__link">
+    <a href="examples/object_following.html" title="Object Following" class="md-nav__link">
       Object Following
     </a>
   </li>
@@ -475,16 +503,53 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Reference
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="docker/index.html" title="Docker" class="md-nav__link">
-      Docker
+    <a href="third_party_kits.html" title="Third Party Kits" class="md-nav__link">
+      Third Party Kits
     </a>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="3d_printing.html" title="3D Printing" class="md-nav__link">
+      3D Printing
+    </a>
+  </li>
+
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
@@ -493,16 +558,45 @@
     </a>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
     <a href="CHANGELOG.html" title="Changes" class="md-nav__link">
       Changes
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="software_setup/wifi_setup.html" title="Wi-Fi setup" class="md-nav__link">
+      Wi-Fi setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/docker_tips.html" title="Docker Tips" class="md-nav__link">
+      Docker Tips
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -524,28 +618,98 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-setup-your-jetbot" class="md-nav__link">
-    Step 1 - Setup your JetBot
+  <a href="#step-1-pick-your-vehicle" class="md-nav__link">
+    Step 1 - Pick your vehicle!
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-follow-the-examples" class="md-nav__link">
-    Step 2 - Follow the Examples
+  <a href="#step-2-setup-your-jetbot" class="md-nav__link">
+    Step 2 - Setup your JetBot
   </a>
+  
+    <nav class="md-nav" aria-label="Step 2 - Setup your JetBot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-diy-jetbot-kit" class="md-nav__link">
+    Option 1 - DIY JetBot Kit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-third-party-jetbot-kit" class="md-nav__link">
+    Option 2 - Third Party JetBot Kit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-create-something-new" class="md-nav__link">
-    Step 3 - Create Something New
+  <a href="#step-3-follow-the-examples" class="md-nav__link">
+    Step 3 - Follow the examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3 - Follow the examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-basic-motion" class="md-nav__link">
+    Example 1 - Basic Motion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-teleoperation" class="md-nav__link">
+    Example 2 - Teleoperation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-collision-avoidance" class="md-nav__link">
+    Example 3 - Collision Avoidance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-road-following" class="md-nav__link">
+    Example 4 - Road Following
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-object-following" class="md-nav__link">
+    Example 5 - Object Following
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#and-more" class="md-nav__link">
+    And more!
   </a>
   
 </li>
@@ -571,19 +735,46 @@
                 
                 
                 <h1 id="getting-started">Getting Started</h1>
-<p>To get started with JetBot follow these steps</p>
-<h2 id="step-1-setup-your-jetbot">Step 1 - Setup your JetBot</h2>
-<p>To get started with the original JetBot kit, follow the instructions detailed <a href="platforms/nvidia_jetbot">here</a>.  We include the bill of materials, hardware setup and software setup needed to get started. </p>
-<p>You can also look into purchasing one of the <a href="third_party_kits">third party kits</a>.  The third party kits may have  alternate software or hardware setup steps.  We recommend referring to their documentation for instructions.</p>
-<h2 id="step-2-follow-the-examples">Step 2 - Follow the Examples</h2>
-<p>After your JetBot is set up properly, it will display it's IP address on the small display screen.  Open up a web browser on your laptop, navigate to <code>&lt;jetbot_ip&gt;:8888</code>, and type in the password <code>jetbot</code> to connect to your robot.  Then follow the example <a href="notebooks">notebooks</a> to learn how to program JetBot.</p>
-<h2 id="step-3-create-something-new">Step 3 - Create Something New</h2>
-<p>JetBot doesn't stop with the examples.  Once you've learned the basics, and are more comfortable with applying AI to new problems, 
-that's when the real fun begins.  If you've made something after
-using JetBot, we want to hear!  The
-<a href="https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-projects/78">NVIDIA Developer Forums</a> are
-a great place to meet other develops, find help for anything Jetson related, and share your projects.  </p>
-<p>The <a href="https://github.com/NVIDIA-AI-IOT/jetbot">JetBot GitHub</a> is another great place to meet developers.  Just <a href="https://github.com/NVIDIA-AI-IOT/jetbot/issues">open an issue</a> if you've found a bug, or have something JetBot related you'd like to share.</p>
+<h2 id="step-1-pick-your-vehicle">Step 1 - Pick your vehicle!</h2>
+<p>To get started with JetBot, first pick your vehicle (hardware) you want to make.</p>
+<p><img alt="" src="images/nvjetbot_vs_3rdparty.png" /></p>
+<p>For details of NVIDIA-designed open-source JetBot hardware, check <a href="bill_of_materials.html">Bill of Materials</a> page and <a href="hardware_setup.html">Hardware Setup</a> page.</p>
+<p>To find kits available from third parties, check <a href="third_party_kits.html">Third Party Kits</a> page.</p>
+<h2 id="step-2-setup-your-jetbot">Step 2 - Setup your JetBot</h2>
+<p>After you've decided which vehicle you want to build, you'll need to source the parts and follow the setup instructions. After that, you're ready to move on to the JetBot examples!</p>
+<p><img alt="JetBot Getting Started Steps" src="images/steps_nvjetbot_vs_3rdparty.png" /></p>
+<h3 id="option-1-diy-jetbot-kit">Option 1 - DIY JetBot Kit</h3>
+<p>To get started with the DIY open-source JetBot, follow these steps.</p>
+<ol>
+<li>
+<p>Get the parts from the <a href="bill_of_materials.html">bill of materials</a>.</p>
+</li>
+<li>
+<p>Follow the <a href="hardware_setup.html">hardware setup</a></p>
+</li>
+<li>
+<p>Follow the <a href="software_setup/docker.html">software setup</a></p>
+</li>
+</ol>
+<h3 id="option-2-third-party-jetbot-kit">Option 2 - Third Party JetBot Kit</h3>
+<p>Third party JetBot kits may have different setup instructions from the DIY JetBot. To get started with a third party jetbot, we recommend referring to the third party kit's setup instructions for details on how to setup.</p>
+<p>Check out the <a href="third_party_kits.html">Third Party Kits</a> page for links and information related to third party kits.</p>
+<h2 id="step-3-follow-the-examples">Step 3 - Follow the examples</h2>
+<p>JetBot comes with many examples to teach robotics and AI basics. These give you the experience you need to begin exploring your own applications with JetBot.</p>
+<h3 id="example-1-basic-motion">Example 1 - Basic Motion</h3>
+<p>The <a href="examples/basic_motion.html">Basic Motion</a> example teaches you how to program JetBot from your web browser with basic motor controls.</p>
+<h3 id="example-2-teleoperation">Example 2 - Teleoperation</h3>
+<p>The <a href="examples/teleoperation.html">Teleoperation</a> example teaches you how to stream live images from JetBot and control JetBot with a gamepad attached to your laptop.</p>
+<h3 id="example-3-collision-avoidance">Example 3 - Collision Avoidance</h3>
+<p>The <a href="examples/collision_avoidance.html">Collision Avoidance</a> example teaches you how to collect data and train a custom Image Classification model to enable JetBot to avoid collisions in a variety of scenarios. The method learned here can be extended to recognize arbitrary classes of image, which can be extended far beyond JetBot!</p>
+<h3 id="example-4-road-following">Example 4 - Road Following</h3>
+<p>The <a href="examples/road_following.html">Road Following</a> example teaches you how to collect data and train a custom Image Regression model to enable JetBot to follow a road. The method learned here can be extended to detect an arbitrary x, y coordinate in an image, which extends far beyond JetBot!</p>
+<h3 id="example-5-object-following">Example 5 - Object Following</h3>
+<p>The <a href="examples/object_following.html">Object Following</a> teaches you how to use a pre-trained object detection model for following an object, like a person, cup, or dog. The pre-trained network you'll learn to use here can be used for a variety of new AI projects.</p>
+<h2 id="and-more">And more!</h2>
+<p>Take the examples, modify them, make JetBot do something new, or create an entirely new AI project of your own.  </p>
+<p>If you do something cool with JetBot, <a href="https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-projects">let us know!</a></p>
+<p>Happy JetBotting :)</p>
                 
               
               
@@ -617,13 +808,13 @@ a great place to meet other develops, find help for anything Jetson related, and
           </a>
         
         
-          <a href="platforms/nvidia_jetbot/index.html" title="Introduction" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="bill_of_materials.html" title="Bill of Materials" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Introduction
+                Bill of Materials
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -650,15 +841,15 @@ a great place to meet other develops, find help for anything Jetson related, and
       
     </div>
     
-      <script src="assets/javascripts/vendor.df0def68.min.js"></script>
-      <script src="assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: ".",
-          features: [],
+          features: ["navigation.expand"],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
