@@ -2,7 +2,7 @@ import traitlets
 from .robot import Robot
 
 
-class JetBot(Platform):
+class JetBot(Robot):
 
     camera_image = traitlets.Any()
     left_speed = traitlets.Float(min=0.0, max=0.0, value=0.0)

@@ -28,17 +28,15 @@ class NvidiaJetBot(JetBot):
         self.left_motor = Motor(self.motor_driver, channel=self.left_motor_channel, alpha=self.left_motor_alpha)
         self.right_motor = Motor(self.motor_driver, channel=self.right_motor_channel, alpha=self.right_motor_alpha)
         
-        self._sent_deprecation_warning = False
         
-        def print_deprecate_motor(x):
-            if not self._sent_deprecation_warning:
-                print('Deprecation warning: .left_motor.value and .right_motor.value are no longer preferred, please directly set .left_speed and .right_speed')
+        def print_deprecation_warning(_):
+            print('Deprecation warning: .left_motor.value and .right_motor.value are no longer preferred, please directly set .left_speed and .right_speed')
+            self.left_motor.unobserve('value')
                 self._sent_deprecation_warning = True
-            return x
         
         # bidirectionally link
-        traitlets.link((self.left_motor, 'value'), (self, 'left_speed'), transform=print_deprecate_motor)
-        traitlets.link((self.right_motor, 'value'), (self, 'right_speed'), transform=print_deprecate_motor)
+        traitlets.link((self.left_motor, 'value'), (self, 'left_speed'))
+        traitlets.link((self.right_motor, 'value'), (self, 'right_speed'))
         
     def set_motors(self, left_speed, right_speed):
         self.left_motor.value = left_speed
