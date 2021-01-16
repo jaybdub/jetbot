@@ -22,19 +22,22 @@ class NvidiaJetBot(JetBot):
     right_motor_channel = traitlets.Integer(default_value=2).tag(config=True)
     right_motor_alpha = traitlets.Float(default_value=1.0).tag(config=True)
     
+    def _print_deprecation_warning(self, change):
+            print('Deprecation warning: .left_motor.value and .right_motor.value are no longer preferred, please directly set .left_speed and .right_speed')
+            self.left_motor.unobserve(self._print_deprecation_warning, 'value')
+            self.right_motor.unobserve(self._print_deprecation_warning, 'value')
+            
     def __init__(self, *args, **kwargs):
         super(NvidiaJetBot, self).__init__(*args, **kwargs)
         self.motor_driver = Adafruit_MotorHAT(i2c_bus=self.i2c_bus)
         self.left_motor = Motor(self.motor_driver, channel=self.left_motor_channel, alpha=self.left_motor_alpha)
         self.right_motor = Motor(self.motor_driver, channel=self.right_motor_channel, alpha=self.right_motor_alpha)
-        
-        
-        def print_deprecation_warning(_):
-            print('Deprecation warning: .left_motor.value and .right_motor.value are no longer preferred, please directly set .left_speed and .right_speed')
-            self.left_motor.unobserve('value')
-                self._sent_deprecation_warning = True
-        
-        # bidirectionally link
+            
+        # attach deprecation warnings for calls to setting <dir>_motor.value which will remove themselves after running
+        self.left_motor.observe(self._print_deprecation_warning, 'value')
+        self.right_motor.observe(self._print_deprecation_warning, 'value')
+                
+        # bidirectionally link deprecated motor interfaces to new motor
         traitlets.link((self.left_motor, 'value'), (self, 'left_speed'))
         traitlets.link((self.right_motor, 'value'), (self, 'right_speed'))
         
