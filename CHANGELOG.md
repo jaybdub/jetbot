@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added ``jetbot/platforms`` to offer a higher level interface for robot platforms, better enabling community kits.
 - Added ``LocalController`` class which allows users to directly connect controller to JetBot
 
 ## [0.4.2] - 11/10/2020
