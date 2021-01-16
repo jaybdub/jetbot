@@ -5,8 +5,8 @@ from .robot import Robot
 class JetBot(Robot):
 
     camera_image = traitlets.Any()
-    left_speed = traitlets.Float(min=0.0, max=0.0, value=0.0)
-    right_speed = traitlets.Float(min=0.0, max=0.0, value=0.0)
+    left_speed = traitlets.Float(min=0.0, max=1.0, value=0.0)
+    right_speed = traitlets.Float(min=0.0, max=1.0, value=0.0)
 
     def set_motors(self, left_speed, right_speed):
         """Sets the left and right motor values synchronously.
