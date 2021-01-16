@@ -6,7 +6,7 @@ from traitlets.config.configurable import Configurable
 
 class Motor(Configurable):
 
-    value = traitlets.Float()
+    value = traitlets.Float(min=-1.0, max=1.0, value=0.0)
     
     # config
     alpha = traitlets.Float(default_value=1.0).tag(config=True)

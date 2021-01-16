@@ -8,10 +8,6 @@ from .jetbot import JetBot
 
 class NvidiaJetBot(JetBot):
     
-    camera_image = traitlets.Any()
-    left_speed = traitlets.Float(min=0.0, max=0.0, value=0.0)
-    right_speed = traitlets.Float(min=0.0, max=0.0, value=0.0)
-    
     left_motor = traitlets.Instance(Motor) # deprecated
     right_motor = traitlets.Instance(Motor) # deprecated
 
@@ -21,11 +17,6 @@ class NvidiaJetBot(JetBot):
     left_motor_alpha = traitlets.Float(default_value=1.0).tag(config=True)
     right_motor_channel = traitlets.Integer(default_value=2).tag(config=True)
     right_motor_alpha = traitlets.Float(default_value=1.0).tag(config=True)
-    
-    def _print_deprecation_warning(self, change):
-            print('Deprecation warning: .left_motor.value and .right_motor.value are no longer preferred, please directly set .left_speed and .right_speed')
-            self.left_motor.unobserve(self._print_deprecation_warning, 'value')
-            self.right_motor.unobserve(self._print_deprecation_warning, 'value')
             
     def __init__(self, *args, **kwargs):
         super(NvidiaJetBot, self).__init__(*args, **kwargs)
@@ -33,10 +24,6 @@ class NvidiaJetBot(JetBot):
         self.left_motor = Motor(self.motor_driver, channel=self.left_motor_channel, alpha=self.left_motor_alpha)
         self.right_motor = Motor(self.motor_driver, channel=self.right_motor_channel, alpha=self.right_motor_alpha)
             
-        # attach deprecation warnings for calls to setting <dir>_motor.value which will remove themselves after running
-        self.left_motor.observe(self._print_deprecation_warning, 'value')
-        self.right_motor.observe(self._print_deprecation_warning, 'value')
-                
         # bidirectionally link deprecated motor interfaces to new motor
         traitlets.link((self.left_motor, 'value'), (self, 'left_speed'))
         traitlets.link((self.right_motor, 'value'), (self, 'right_speed'))

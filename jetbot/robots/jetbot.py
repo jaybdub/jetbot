@@ -4,9 +4,9 @@ from .robot import Robot
 
 class JetBot(Robot):
 
-    camera_image = traitlets.Any()
-    left_speed = traitlets.Float(min=0.0, max=0.0, value=0.0)
-    right_speed = traitlets.Float(min=0.0, max=0.0, value=0.0)
+    camera_image = traitlets.Any(value=None)
+    left_speed = traitlets.Float(min=-1.0, max=1.0, value=0.0)
+    right_speed = traitlets.Float(min=-1.0, max=1.0, value=0.0)
 
     def set_motors(self, left_speed, right_speed):
         """Sets the left and right motor values synchronously.
@@ -23,7 +23,7 @@ class JetBot(Robot):
         """
         self.left_speed = left_speed
         self.right_speed = right_speed
-
+    
     def forward(self, speed=1.0):
         """Moves the robot forward."""
         self.set_motors(speed, speed)
@@ -50,3 +50,6 @@ class JetBot(Robot):
         to these attributes are updated.
         """
         self.set_motors(speed, -speed)
+
+    def __del__(self):
+        self.stop()
