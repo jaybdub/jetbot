@@ -30,14 +30,14 @@ class JetBot(Robot):
 
     def backward(self, speed=1.0):
         """Moves the robot backward"""
-        self.set_motors(speed, speed)
+        self.set_motors(-speed, -speed)
         
     def left(self, speed=1.0):
-        """Moves the robot forward"""
+        """Moves the robot left"""
         self.set_motors(-speed, speed)
         
     def right(self, speed=1.0):
-        """Moves the robot forward"""
+        """Moves the robot right."""
         self.set_motors(speed, -speed)
 
     def stop(self):
